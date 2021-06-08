@@ -11,7 +11,7 @@ def greet_user(update: Update, context: CallbackContext):
 	update.message.reply_text(text)
 
 def main():
-	mybot = Updater(settings.APY_KEY)
+	mybot = Updater(settings.API_KEY)
 
 	dp = mybot.dispatcher
 	dp.add_handler(CommandHandler('start', greet_user))
